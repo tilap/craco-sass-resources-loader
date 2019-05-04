@@ -1,0 +1,13 @@
+/.cache
+/node_modules
+*.log
+/errors
+/.vscode
+/dist
+.DS_Store
+coverage
+.idea
+package-lock.json
+yarn.lock
+yarn-error.log
+/test-results
