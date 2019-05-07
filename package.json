@@ -1,6 +1,6 @@
 {
   "name": "craco-sass-resources-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A craco plugin to use sass-resources-loader with create-react-app",
   "repository": "github:tilap/craco-sass-resources-loader",
   "main": "index.js",
