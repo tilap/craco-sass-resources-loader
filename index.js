@@ -1,10 +1,5 @@
 module.exports = {
   overrideWebpackConfig: ({ webpackConfig, pluginOptions }) => {
-    // Check plugin options
-    if (!pluginOptions || !pluginOptions.resources) {
-      throw new Error('craco-sass-resources-loader error: require plugin options resources');
-    }
-    
     // Check webpack config
     if (
       !webpackConfig || 
@@ -25,11 +20,13 @@ module.exports = {
             oneOf.test && oneOf.use &&
             (`${oneOf.test}`.includes('scss') || `${oneOf.test}`.includes('sass'))
           ) {
+            const options = pluginOptions && pluginOptions.resources ? {
+              resources: pluginOptions.resources,
+            } : {};
+
             output.module.rules[ruleIndex].oneOf[oneOfIndex].use.push({
               loader: 'sass-resources-loader',
-              options: {
-                resources: pluginOptions.resources
-              },
+              options,
             })
           }
         })
