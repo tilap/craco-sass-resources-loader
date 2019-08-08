@@ -1,6 +1,7 @@
 # Craco sass-resources-loader
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftilap%2Fcraco-sass-resources-loader.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftilap%2Fcraco-sass-resources-loader?ref=badge_shield)
 
 This is a [craco](https://github.com/sharegate/craco) plugin to add [sass-resources-loader](https://www.npmjs.com/package/sass-resources-loader) with [create-react-app](https://facebook.github.io/create-react-app/) version >= 2.
 
@@ -53,3 +54,6 @@ module.exports = {
   ],
 }
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftilap%2Fcraco-sass-resources-loader.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftilap%2Fcraco-sass-resources-loader?ref=badge_large)
