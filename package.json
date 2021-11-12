@@ -37,5 +37,8 @@
       "eslint --quiet --fix",
       "git add"
     ]
+  },
+  "scripts": {
+    "prepare": "husky install"
   }
 }
