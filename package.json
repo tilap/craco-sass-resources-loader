@@ -5,6 +5,7 @@
   "repository": "github:tilap/craco-sass-resources-loader",
   "main": "index.js",
   "author": "Julien Tilap LA VINH",
+  "maintainers": ["Scott Fischer"],
   "license": "MIT",
   "keywords": [
     "craco",
@@ -14,28 +15,7 @@
     "sass",
     "sass-resources-loader"
   ],
-  "devDependencies": {
-    "commitlint": "^7.5.2",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1"
-  },
   "dependencies": {
-    "sass-resources-loader": "^2.2.4"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "index.js": [
-      "eslint --quiet --fix",
-      "git add"
-    ]
+    "sass-resources-loader": "^2.2.5"
   }
 }

@@ -4,6 +4,8 @@
 
 This is a [craco](https://github.com/sharegate/craco) plugin to add [sass-resources-loader](https://www.npmjs.com/package/sass-resources-loader) with [create-react-app](https://facebook.github.io/create-react-app/) version >= 2.
 
+Originally authored by [tilap](https://github.com/tilap). This version was forked and is now actively maintained and monitored for security vulnerabilities.
+
 ## Installation
 
 ```bash
@@ -16,8 +18,8 @@ $ npm install craco-sass-resources-loader --save-dev
 
 ## Usage
 
-`craco-sass-resources-loader` expect a `resources` option containing a string or an array of
-string pointing the scss files your want to load before any scss/sass file.
+`craco-sass-resources-loader` expects a `resources` option containing a string or an array of
+strings pointing to the scss files your want to load across all you compiled scss/sass files.
 
 ```js
 const sassResourcesLoader = require('craco-sass-resources-loader');
@@ -34,7 +36,7 @@ module.exports = {
 }
 ```
 
-You can load multiple scss resources files too:
+You can load multiple scss resource files too:
 
 ```js
 const sassResourcesLoader = require('craco-sass-resources-loader');
